@@ -27,6 +27,9 @@ interview_reverted = interview.reverse!.join("\n")
 file = open("week2.txt", "w")
 file.write(interview_reverted)
 file.close
+
+
+#----------------------------------------------- testing
 =begin
 copyinterview.write(interview)
 copyinterview.close
