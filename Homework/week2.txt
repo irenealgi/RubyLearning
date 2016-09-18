@@ -1,0 +1,7 @@
+Machine says: I'm a machine, Arturo. I live in the cloud.
+I say: I'm from Madrid. And yourself?
+Machine says: Wow, that's young! And where are you from?
+I say: I'm 31
+Machine says: Hello Arturo, nice meeting you too. How old are you?
+I say: My name is Arturo, nice to meet you
+Machine says: Hi, what's your name?
