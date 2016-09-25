@@ -4,6 +4,10 @@ so `[1, 2, 3, 4, 5, 6]` should return `[[2, 4, 6], [1, 3, 5]]`
 =end
 
 numbers = [1, 2, 3, 4, 5, 6]
-even = numbers.select {|num| num.even? }
-odd = numbers.select {|num| num.odd? }
-puts even.concat odd
+evens = numbers.select {|num| num.even? }
+odds = numbers.select {|num| num.odd? }
+[evens, odds]
+
+#OR
+
+[] << evens << odds

@@ -9,4 +9,5 @@ puts numbers.drop(3)
 
 #OR
 
+# Incorrect because you are comparing the number not the position, eg. [1,2,3,1,5,6] fails!
 puts numbers.drop_while { |num| num < 4 }
