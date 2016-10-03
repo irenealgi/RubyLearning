@@ -18,7 +18,7 @@ end
 def get_words_from_line(single_line)
   columns = single_line.split(",")
   onfidoers = []
-  columns.each { |x| onfidoers << x.strip }
+  columns.each { |line| onfidoers << line.strip }
   onfidoers
 end
 
@@ -49,7 +49,7 @@ def get_onfidoer_join_date(filename)
   puts "What's your name?"
   name = $stdin.gets.chomp
   onfido_names = build_database(filename)
-  onfidoer_info = onfido_names.select { |x| x.include?(name)}
+  onfidoer_info = onfido_names.select { |line| line.include?(name)}
   puts "Great, #{name}, here's your joining date:"
   onfidoer_info[0][4]
 end
@@ -57,10 +57,10 @@ end
 onfidoer_join_date = get_onfidoer_join_date("myexcel.csv")
 puts onfidoer_join_date
 
-=begin
-def get_trios("myexcel.csv")
+#This does NOT work
+def get_trios(filename)
   puts "Make groups of three"
-  onfido_names = build_database("myexcel.csv")
+  onfido_names = build_database(filename)
   each_onfidoer = onfido_names.each[0][0]
   each_onfidoer
 end
@@ -69,4 +69,4 @@ puts get_trios("myexcel.csv")
 trio = each_onfidoer.combination(3).to_a
 puts trio
 
-=end
+
